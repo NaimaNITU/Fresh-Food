@@ -47,42 +47,122 @@
 
 </head>
 <body>
-    <header class="sora-font">
+    <header class="sora-font bg-gradient-to-b from-white to-bgPrimary">
         <!-- navigation -->
         <nav>
-            <!-- main navigation container -->
-            <div class="flex justify-between">
+            <div class="navbar flex justify-between items-center">
 
-                <!-- nav logo -->
-                <div>
-                    <img src="c2-assets/logo-header.png" alt="">
+                <!-- nav bar start -->
+                <div class="navbar-start flex flex-1 justify-between px-12 mb-10">
+                    <div>
+                        <img src="c2-assets/logo-header.png" alt="">
+                    </div>
+
+                    <div>
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <i class="fa-solid fa-bars fill-btnprimary"></i>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li><a>Product</a></li>
+                                <li><a>Services</a></li>
+                                <li><a>Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- nav links -->
-                <div>
-                    <ul class="flex">
+
+                <!-- nav bar center -->
+                <div class="navbar-center hidden lg:flex flex-1">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a>Product</a></li>
                         <li><a>Services</a></li>
-                        <li><a>Contact us</a></li>
+                        <li><a>Contact Us</a></li>
                     </ul>
                 </div>
 
-                <!-- nav icon and button -->
-                <div class="space-x-2">
+                <!-- navbar end -->
+                <div class="space-x-2 hidden">
                     <!-- search icon -->
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-cart-shopping "></i>
                     <button class=" text-black border-2 border-btnPrimary rounded-md px-8 py-2">Login</button>
-                    <button class="btn btn-secondary bg-btnPrimary border-0">Register</button>
+                    <button class=" bg-btnPrimary border-0 text-white rounded-md px-8 py-3">Register<ry /button>
                 </div>
+
             </div>
         </nav>
+
+        <!-- header section -->
+        <section class="lg:px-72 md:px-20 px-5 text-center space-y-8">
+            <h1 class="text-6xl font-semibold leading-[1.5]">Freshness <span class="text-btnPrimary">You Can <br>
+                    Count</span> On, Prices You’ll Love!</h1>
+            <p class="text-2xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
+                staples,
+                we’ve got you
+                covered every day!</p>
+            <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="">
+        </section>
     </header>
 
+    <main>
 
+        <!-- service section -->
+        <section class="max-w-7xl mx-auto sora-font mt-32 mb-20">
+            <div class="mx-6">
+                <h1 class=" text-4xl text-btnPrimary font-semibold mb-5">Services</h1>
 
+                <!-- card container -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
+                    <!-- 24/7 service card -->
+                    <div class="card shadow-xl bg-bgPrimary">
+                        <figure class="px-10 pt-10">
+                            <img src="c2-assets/service.png" alt="Shoes" class="bg-white p-4 rounded-full" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                            <h2 class="card-title text-2xl">24/7 Services</h2>
+                            <p class="text-lg">Our 24/7 services ensure you have access to what you need at any time,
+                                providing
+                                round-the-clock convenience and
+                                reliability.</p>
+                        </div>
+                    </div>
 
-    <main></main>
+                    <!-- fast delivery card -->
+                    <div class="card shadow-xl bg-bgPrimary ">
+                        <figure class="px-10 pt-10">
+                            <img src="c2-assets/delivery.png" alt="Shoes" class="bg-white p-4 rounded-full" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                            <h2 class="card-title text-2xl">Fast Delivery</h2>
+                            <p class="text-lg">With our fast delivery, you can rest assured that your orders will reach
+                                you
+                                quickly and
+                                efficiently, saving you time
+                                and effort.</p>
+                        </div>
+                    </div>
+
+                    <!-- healthy products card -->
+                    <div class="card shadow-xl bg-bgPrimary">
+                        <figure class="px-10 pt-10">
+                            <img src="c2-assets/healthy.png" alt="Shoes" class="bg-white p-4 rounded-full" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                            <h2 class="card-title text-2xl">Healthy Products</h2>
+                            <p class="text-lg">We are committed to offering only the healthiest products, carefully
+                                curated
+                                to support your
+                                well-being and lifestyle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
 
 
